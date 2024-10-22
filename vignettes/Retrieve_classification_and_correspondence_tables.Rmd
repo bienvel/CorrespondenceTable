@@ -158,7 +158,7 @@ The function retrieveCorrespondenceTable() retrieves the correspondences table f
 * showQuery - the SPARQL query generated
 
 The values of the prefix and ID_table can be found using the correspondenceList() function (see below).
-The argument language, CSVout and showQuery are optional and set as default as language="en", CSVout="FALSE" and showQuery="TRUE".
+The argument language, CSVout and showQuery are optional and set as default as language="en", CSVout="NULL" and showQuery="TRUE".
 
 The namespace prefix needed to execute the SPARQL query are automatically generated using the prefixList() function (see above).
 
@@ -173,7 +173,7 @@ To following code is used to retrieve the French German and Bulgarian correspond
 # prefix = "nace2"
 # ID_table = "NACE2_CPA21"
 # language = "en"
-# CSVout = FALSE
+# CSVout = NULL
 # showQuery= TRUE
 # 
 # result_ls = retrieveCorrespondenceTable(prefix, endpoint, ID_table, language, CSVout, showQuery)
